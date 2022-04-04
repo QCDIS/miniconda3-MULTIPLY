@@ -1,0 +1,59 @@
+{% set name = "funniest" %}
+{% set version = "0.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ./
+  # git_url ./
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+# "If you run pip install without the --no-deps option, pip will often install dependencies in your conda recipe and those dependencies will become part of your package. This wastes space in the package and increases the risk of file overlap, file clobbering, and broken packages."
+
+requirements:
+  build:
+    - git
+    - numpy<2.0a0
+    - graph-tool
+    # - pytest
+    - setuptools_scm>=3.3.1
+    # https://github.com/conda/conda-build/issues/2286
+    # you can't add channels in the meta.yaml file.  You can, however add them to condarc, and conda-build will respect that
+    # Conda 4.4 adds some very nice ways of specifying channel on a per-package basis, and conda-build will add support for those specs in meta.yaml sometime soon.
+    # https://github.com/conda/conda-build/issues/532
+  host:
+    #- cmd2
+    - pip
+    - python
+    - numpy<2.0a0
+    - graph-tool
+    # - pytest
+    - setuptools_scm>=3.3.1
+  run:
+    #- cmd2
+    - python
+    - numpy<2.0a0
+    - graph-tool
+    # - pytest
+    - setuptools_scm>=3.3.1
+
+test:
+  imports:
+    - funniest
+
+about:
+  home: "The package home page"
+  license: "MIT"
+  license_family: "MIT"
+  license_file: ""
+  summary: "Program to create a package"
+  doc_url: ""
+  dev_url: ""
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
