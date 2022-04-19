@@ -3,6 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python>=3.8
+  - pdal
+  - python-pdal
+  - gdal
   - pip:
     - https://github.com/QCDIS/Deploy_MULTIPLY/releases/download/0.1/BRDF_descriptors-1.3-py3-none-any.whl
     - https://github.com/QCDIS/Deploy_MULTIPLY/releases/download/0.1/KaFKA-0.0.0-py3-none-any.whl
