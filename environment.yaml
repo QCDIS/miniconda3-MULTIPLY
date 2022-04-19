@@ -1,4 +1,4 @@
-name: multiply-platform
+name: venv
 channels:
   - conda-forge
   - defaults
