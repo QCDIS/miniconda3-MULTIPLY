@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN apt-get update --allow-releaseinfo-change && apt-get -y install git unzip
+RUN apt-get update --allow-releaseinfo-change
 RUN conda install conda-build
 RUN conda update -n base -c defaults conda -y
 
