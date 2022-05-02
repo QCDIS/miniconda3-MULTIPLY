@@ -26,8 +26,8 @@ dependencies:
   - cfitsio=3.470=hb60a0a2_2
   - cftime=1.0.4.2=py36hc1659b7_0
   - chardet=3.0.4=py36_1003
-  - click=7.0=py_0
-  - click-plugins=1.1.1=py_0
+#   - click=7.0=py_0
+#   - click-plugins=1.1.1=py_0
   - cligj=0.5.0=py_0
   - cloudpickle=1.2.2=py_1
   - colorama=0.4.3=py_0
@@ -41,7 +41,7 @@ dependencies:
   - dbus=1.13.6=he372182_0
   - decorator=4.4.1=py_0
   - defusedxml=0.6.0=py_0
-  - docutils=0.16=py36_0
+#   - docutils=0.16=py36_0
   - entrypoints=0.3=py36_1000
   - expat=2.2.9=he1b5a44_2
   - fiona=1.8.9.post2=py36hdff7cfa_0
@@ -140,7 +140,7 @@ dependencies:
   - nbconvert=5.6.1=py36_0
   - nbformat=5.0.4=py_0
   - ncurses=6.1=hf484d3e_1002
-  - netcdf4=1.5.1.2=py36had58050_0
+#   - netcdf4=1.5.1.2=py36had58050_0
   - networkx=2.4=py_0
   - nodejs=12.4.0=he1b5a44_0
   - notebook=6.0.3=py36_0
@@ -176,12 +176,12 @@ dependencies:
   - ptyprocess=0.6.0=py_1001
   - py=1.8.1=py_0
   - pybtex=0.22.2=py36_0
-  - pybtex-docutils=0.2.2=py36_0
+#   - pybtex-docutils=0.2.2=py36_0
   - pycparser=2.19=py36_1
   - pygments=2.5.2=py_0
   - pyopenssl=19.1.0=py36_0
   - pyparsing=2.4.6=py_0
-  - pyproj=2.2.2=py36h2fd02e8_0
+#   - pyproj=2.2.2=py36h2fd02e8_0
   - pyqt=5.9.2=py36hcca6a23_4
   - pyrsistent=0.15.7=py36h516909a_0
   - pysocks=1.7.1=py36_0
@@ -191,7 +191,7 @@ dependencies:
   - python-dateutil=2.8.1=py_0
   - pytz=2019.3=py_0
   - pywavelets=1.1.1=py36hc1659b7_0
-  - pyyaml=3.12=py36_1
+#   - pyyaml=3.12=py36_1
   - pyzmq=18.1.1=py36h1768529_0
   - qt=5.9.7=h52cfd70_2
   - qtconsole=4.6.0=py_0
@@ -208,9 +208,9 @@ dependencies:
   - sip=4.19.8=py36hf484d3e_1000
   - six=1.12.0=py36_1001
   - snowballstemmer=2.0.0=py_0
-  - sphinx=1.8.4=py36_0
-  - sphinxcontrib-bibtex=0.4.2=py_0
-  - sphinxcontrib-websupport=1.1.2=py_0
+#   - sphinx=1.8.4=py36_0
+#   - sphinxcontrib-bibtex=0.4.2=py_0
+#   - sphinxcontrib-websupport=1.1.2=py_0
   - sqlite=3.30.1=hcee41ef_0
   - tensorboard=1.13.1=py36_0
   - tensorflow=1.13.1=h76b4ce7_7
