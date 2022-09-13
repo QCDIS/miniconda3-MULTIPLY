@@ -13,3 +13,9 @@ dependencies:
     - lazperf==1.4.4
     - laspy[lazrs,laszip]
     - numpy==1.23.0
+    - absl-py>=1.00
+    - alabaster==0.7.12
+    - astor==0.8.1
+    - atomicwrites==1.4.0
+    - attrs==21.4.0
+    - babel>=2.10.1
