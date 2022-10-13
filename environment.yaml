@@ -11,7 +11,6 @@ dependencies:
   - pip
   - pip:
     - lazperf==1.4.4
-    - laspy[lazrs,laszip]
     - numpy==1.23.0
     - absl-py>=1.00
     - alabaster==0.7.12
@@ -127,4 +126,5 @@ dependencies:
     - zstd==1.5.2 #==h8a70e8d_1
     - typing==3.7.4.3 #==pyhd8ed1ab_0
     - sentinelhub
+    - laspy[lazrs,laszip]
     - git+https://github.com/JorisTimmermans/data-access.git
