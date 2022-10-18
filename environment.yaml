@@ -8,7 +8,7 @@ dependencies:
   - pdal
   - python-pdal
   - gdal
-  - pip>=22.3
+  - pip>22.3
   - pip:
     - lazperf==1.4.4
     - absl-py>=1.00
