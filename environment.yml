@@ -13,6 +13,9 @@ dependencies:
   - python-pdal
   - gdal
   - h5py
+  - pyproj
+  - xarray
+  - sentinelhub
   - pip
   - pip:
     - git+https://github.com/QCDIS/multiply-core.git
