@@ -5,6 +5,8 @@ channels:
   - mathieu
   - anaconda
 dependencies:
+  - scikit-image
+  - h5py
   - pip
   - pip:
     - git+https://github.com/JorisTimmermans/data-access.git
