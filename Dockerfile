@@ -1,4 +1,4 @@
-FROM qcdis/miniconda3-pdal:v0.4
+FROM qcdis/miniconda3-pdal
 
 COPY environment.yml .
 RUN conda env update -f environment.yml

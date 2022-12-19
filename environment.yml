@@ -5,13 +5,6 @@ channels:
   - mathieu
   - anaconda
 dependencies:
-  - six
-  - psutil
-  - requests
-  - scikit-image
-  - scikit-learn
-  - numba
-  - pyproj
   - pip
   - pip:
     - git+https://github.com/JorisTimmermans/data-access.git
