@@ -1,0 +1,30 @@
+name: venv
+channels:
+  - conda-forge
+  - defaults
+  - mathieu
+  - anaconda
+dependencies:
+  - six
+  - psutil
+  - requests
+  - scikit-image
+  - scikit-learn
+  - lightgbm>=2.1.0
+  - numpy>=1.13
+  - scipy>=1.0.0
+  - gdal>=2.1
+  - numba
+  - pyproj
+  - pip
+  - pip:
+    - git+https://github.com/JorisTimmermans/data-access.git
+    - git+https://github.com/JorisTimmermans/atmospheric_correction.git
+    - git+https://github.com/QCDIS/multiply-core.git
+    - git+https://github.com/QCDIS/inference-engine.git
+    - git+https://github.com/QCDIS/prior-engine.git
+    - git+https://github.com/JorisTimmermans/atmospheric_correction.git
+    - git+https://github.com/QCDIS/vm-support.git
+    - git+https://github.com/multiply-org/multiply-orchestration.git
+    - git+https://github.com/QCDIS/KaFKA-InferenceEngine.git
+    - git+https://github.com/QCDIS/BRDF_descriptors.git
