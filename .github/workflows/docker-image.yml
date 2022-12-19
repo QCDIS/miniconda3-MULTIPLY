@@ -6,7 +6,7 @@ on:
       - '*'
       
 env:
-  TAG: "miniconda3-MULTIPLY"
+  TAG: "miniconda3-multiply"
   DOCKERHUB_IMAGE_ID: "qcdis/"
 
 jobs:
