@@ -22,6 +22,7 @@ dependencies:
   - shapely
   - beautifulsoup4
   - pyyaml
+  - requests
   - pip
   - pip:
     - git+https://github.com/QCDIS/multiply-core.git
