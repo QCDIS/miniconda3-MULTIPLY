@@ -21,6 +21,7 @@ dependencies:
   - scipy
   - shapely
   - beautifulsoup4
+  - mamba
   - pyyaml
   - requests
   - pip

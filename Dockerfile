@@ -1,5 +1,5 @@
 FROM continuumio/miniconda3
-
+RUN conda install -c conda-forge mamba  conda-merge conda-pack
 COPY environment.yml .
 RUN mamba env update -f environment.yml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
