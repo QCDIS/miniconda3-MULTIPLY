@@ -1,9 +1,10 @@
 FROM continuumio/miniconda3
 
 COPY environment.yml .
-RUN conda env update -f environment.yml
-RUN conda list
+RUN mamba env update -f environment.yml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
+RUN echo "conda activate venv" >> ~/.bashrc
+SHELL ["/bin/bash", "--login", "-c"]
 #RUN pip uninstall -y typing-inspect marshmallow
 #RUN conda install -n venv typing_inspect requests marshmallow
 RUN conda list
