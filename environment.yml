@@ -11,7 +11,7 @@ dependencies:
   - cxx-compiler
   - pdal
   - python-pdal
-  - gdal
+  - gdal=2.4
   - h5py
   - pyproj
   - xarray
