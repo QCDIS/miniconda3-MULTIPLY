@@ -6,6 +6,7 @@ RUN wget https://raw.githubusercontent.com/QCDIS/vm-support/master/environment.y
 
 COPY environment.yml .
 RUN conda-merge multiply-core-environment.yml data-access-environment.yml vm-support-environment.yml environment.yml > merged-environment.yaml
+RUN cat merged-environment.yaml
 RUN mamba env update -f merged-environment.yaml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
 RUN echo "conda activate venv" >> ~/.bashrc
