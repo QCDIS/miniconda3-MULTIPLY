@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3
 RUN conda install -c conda-forge mamba conda-merge conda-pack
 RUN wget https://raw.githubusercontent.com/QCDIS/multiply-core/master/environment.yml -O multiply-core-environment.yml
-RUN wget https://raw.githubusercontent.com/QCDIS/data-access/master/environment.yaml -O data-access-environment.yml
+RUN wget https://raw.githubusercontent.com/QCDIS/data-access/master/environment.yml -O data-access-environment.yml
 RUN wget https://raw.githubusercontent.com/QCDIS/vm-support/master/environment.yml -O vm-support-environment.yml
 
 RUN conda-merge multiply-core-environment.yml data-access-environment.yml vm-support-environment.yml environment.yaml > merged-environment.yaml
