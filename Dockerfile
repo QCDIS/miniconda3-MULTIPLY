@@ -4,6 +4,7 @@ RUN wget https://raw.githubusercontent.com/QCDIS/multiply-core/master/environmen
 RUN wget https://raw.githubusercontent.com/QCDIS/data-access/master/environment.yml -O data-access-environment.yml
 RUN wget https://raw.githubusercontent.com/QCDIS/vm-support/master/environment.yml -O vm-support-environment.yml
 
+COPY environment.yml .
 RUN conda-merge multiply-core-environment.yml data-access-environment.yml vm-support-environment.yml environment.yml > merged-environment.yaml
 RUN conda env update -f merged-environment.yaml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
