@@ -1,12 +1,7 @@
 FROM continuumio/miniconda3:22.11.1
 RUN conda install -c conda-forge mamba conda-merge conda-pack
-#RUN wget https://raw.githubusercontent.com/QCDIS/multiply-core/master/environment.yml -O multiply-core-environment.yml
-#RUN wget https://raw.githubusercontent.com/QCDIS/data-access/master/environment.yml -O data-access-environment.yml
-#RUN wget https://raw.githubusercontent.com/QCDIS/vm-support/master/environment.yml -O vm-support-environment.yml
+RUN wget https://raw.githubusercontent.com/QCDIS/NaaVRE/main/docker/MULTIPLY/environment.yaml
 
-COPY environment.yml .
-#RUN conda-merge multiply-core-environment.yml data-access-environment.yml vm-support-environment.yml environment.yml > merged-environment.yaml
-#RUN cat merged-environment.yaml
 RUN mamba env update -f environment.yml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
 RUN echo "conda activate venv" >> ~/.bashrc
