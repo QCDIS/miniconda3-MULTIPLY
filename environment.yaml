@@ -4,12 +4,12 @@ channels:
   - defaults
   - enable_revoked
 dependencies:
-  - libgdal=3.0
+  - libgdal=2.4
   - beautifulsoup4
   - cxx-compiler
   - flake8
   - gcc=12.1.0
-  - gdal=3.0
+  - gdal=2.4
   - h5netcdf
   - Jinja2
   - laspy

@@ -25,7 +25,10 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: Build and push to container Registry
       run: |
-        docker build . --file Dockerfile -t $TAG
+        docker build . --file Dockerfile -t miniconda-multiply
+        docker build . --file DockerfileTest
+        docker image tag miniconda-multiply $TAG
+        
         # Change all uppercase to lowercase
         IMAGE_ID=$DOCKERHUB_IMAGE_ID$TAG
         IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
