@@ -1,7 +1,7 @@
 FROM condaforge/mambaforge:22.11.1-4
 RUN conda install -c conda-forge mamba conda-merge conda-pack
-RUN wget https://raw.githubusercontent.com/QCDIS/NaaVRE/main/docker/MULTIPLY/environment.yaml
-
+#RUN wget https://raw.githubusercontent.com/QCDIS/NaaVRE/main/docker/MULTIPLY/environment.yaml
+COPY environment.yaml .
 RUN mamba env update -f environment.yaml
 SHELL ["conda", "run", "-n", "venv", "/bin/bash", "-c"]
 RUN echo "conda activate venv" >> ~/.bashrc
