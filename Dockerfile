@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:23.3.1-0
+FROM continuumio/miniconda3:23.9.0-0
 
 RUN conda install -c conda-forge mamba conda-merge conda-pack yq
 RUN wget https://raw.githubusercontent.com/QCDIS/NaaVRE/main/docker/MULTIPLY/environment.yaml
